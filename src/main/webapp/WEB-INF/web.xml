@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <display-name>Student Management App</display-name>
+
+    <!-- HomeController -->
+    <servlet>
+        <servlet-name>HomeController</servlet-name>
+        <servlet-class>com.student.informationsystem.controller.HomeController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomeController</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+
+    <!-- StudentController -->
+    <servlet>
+        <servlet-name>StudentController</servlet-name>
+        <servlet-class>com.student.informationsystem.controller.StudentController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentController</servlet-name>
+        <url-pattern>/student</url-pattern>
+        <url-pattern>/students</url-pattern>
+    </servlet-mapping>
+
+    <!-- ScoreController -->
+    <servlet>
+        <servlet-name>ScoreController</servlet-name>
+        <servlet-class>com.student.informationsystem.controller.ScoreController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ScoreController</servlet-name>
+        <url-pattern>/score</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome file -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
